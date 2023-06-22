@@ -2,26 +2,15 @@
 
 
 const PHOTO_COUNT = 25;
-// eslint-disable-next-line no-unused-vars
+
 const Likes = {
   MIN: 15,
   MAX: 200
 };
 
-// eslint-disable-next-line no-unused-vars
-const description = ['Закат на берегу моря',
-  'Романтический ужин на балконе с видом на горы',
-  'Уютный вечер в семейном кругу',
-  'Улочки старого города',
-  'Красота в глазах смотрящего',
-];
-
-// eslint-disable-next-line no-unused-vars
 const photos = [];
 
-
-function generateComments() {
-  const nameList = ['Александр', 'Дарина', 'Илья', 'Марина', 'Андрей', 'Светлана', 'Константин', 'Вера'];
+const nameList = ['Александр', 'Дарина', 'Илья', 'Марина', 'Андрей', 'Светлана', 'Константин', 'Вера'];
   const commentList = [
     'Всё отлично!',
     'В целом всё неплохо. Но не всё.',
@@ -30,6 +19,18 @@ function generateComments() {
     'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.',
     'Лица у людей на фотке перекошены, как будто их избивают. Лица у людей на фотке перекошены, как будто их избивают.'
   ];
+
+
+const description = ['Закат на берегу моря',
+  'Романтический ужин на балконе с видом на горы',
+  'Уютный вечер в семейном кругу',
+  'Улочки старого города',
+  'Красота в глазах смотрящего',
+];
+
+
+function generateComments() {
+
   const comments = [];
   const numberOfComments = getRandomInteger(0, 30);
   for (let i = 1; i <= numberOfComments; i++) {
@@ -62,3 +63,4 @@ const addPhotos = () => {
 addPhotos();
 
 export {generateComments, addPhotos, addPhoto};
+export
