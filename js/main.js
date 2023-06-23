@@ -25,4 +25,3 @@ function findPalindrome(string) {
 findPalindrome('Лёша на полке клопа нашёл ');
 
 
-
